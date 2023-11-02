@@ -7,11 +7,212 @@
   <link href="output.css" rel="stylesheet">
 </head>
 
-<!-- <body class="flex items-center justify-center h-screen"> -->
-<body class="flex items-center justify-center h-screen p-4 px-4 tracking-wide bg-slate-300 xs:bg-green-300 sm:bg-pink-300 md:bg-purple-300 lg:bg-blue-300 xl:bg-red-300 2xl:bg-orange-300">
-  <h1 class="text-3xl font-bold underline text-red-600">
-    Hello world!
-  </h1>
+<body class="flex items-center justify-center h-auto p-4 px-4 tracking-wide bg-gray-100">
+<!-- <body class="flex items-center justify-center h-auto p-4 px-4 tracking-wide bg-slate-300 xs:bg-green-300 sm:bg-pink-300 md:bg-purple-300 lg:bg-blue-300 xl:bg-red-300 2xl:bg-orange-300"> -->
+  <form class="px-6 py-4 rounded-xl hover:backdrop-blur-sm duration-1000 ease-in-out ">
+    <div class="flex flex-wrap m-auto w-auto sm:w-5/6 md:w-2/3 lg:1/3 px-6 py-4 rounded-xl drop-shadow-lg backdrop-blur-md duration-1000 ease-in-out space-y-6 ">
+      <h1 class="w-full text-3xl text-center">
+        Register as a player here.
+      </h1>
+
+      <div class="w-full md:w-2/5 mr-auto my-auto space-y-1 m-auto pt-2 pb-1">
+        <h1 class="w-full text-left text-2xl ">
+          Basic Details:
+        </h1>
+      </div>
+
+  <!-- EMPTY DIV -->
+      <div class="w-0 md:w-2/5 ml-auto my-auto space-y-1 m-auto"></div>
+
+  <!-- FIRST NAME -->
+      <div class="w-full md:w-2/5 mr-auto my-auto space-y-1 m-auto">
+        <label>
+          First Name:
+        </label>
+        <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md duration-200 hover:drop-shadow-lg" placeholder="First Name" required>
+      </div>
+
+  <!-- LAST NAME -->
+      <div class="w-full md:w-2/5 ml-auto my-auto space-y-1 m-auto">
+        <label>
+          Last Name:
+          <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md duration-200 hover:drop-shadow-lg" placeholder="Last Name" required>
+        </label>
+      </div>
+
+  <!-- PHONE -->
+      <div class="w-full md:w-2/5 mr-auto my-auto space-y-1 m-auto">
+        <label>
+          Cellphone Number:
+          <input type="tel" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md duration-200 hover:drop-shadow-lg" placeholder="Cellphone Number" required>
+        </label>
+      </div>
+
+  <!-- EMAIL -->
+      <div class="w-full md:w-2/5 ml-auto my-auto space-y-1 m-auto">
+        <label>
+          E-Mail:
+          <input type="email" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md duration-200 hover:drop-shadow-lg" placeholder="E-Mail" required>
+        </label>
+      </div>
+
+  <!-- ID NUMBER/PASSPORT -->
+      <div class="w-full md:w-2/5 mr-auto my-auto space-y-1 m-auto">
+        <div class="">
+          <label for="enterID" class="mr-8">
+            <input type="radio" name="id/passport" id="enterID">
+            ID:
+          </label>
+
+          <label for="enterPassport">
+            <input type="radio" name="id/passport" id="enterPassport">
+            Passport
+          </label>
+          <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md duration-200 hover:drop-shadow-lg" placeholder="ID or Passport Number" required>
+        </div>
+      </div>
+
+  <!-- DATE OF BIRTH -->
+      <div class="w-full md:w-2/5 ml-auto my-auto space-y-1 m-auto">
+        <label>
+          Date of Birth:
+          <input type="date" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md duration-200 hover:drop-shadow-lg" required>
+        </label>
+      </div>
+
+  <!-- EMPTY DIV -->
+  <!-- <div class="w-full ml-auto my-auto space-y-1 m-auto"></div> -->
+
+  <!-- ADDRESS -->
+  <!-- STREET ADRESS -->
+      <div class="w-full md:w-2/5 mr-auto my-auto space-y-1 m-auto pt-8">
+        <h1 class="w-full text-left text-2xl">
+          Address:
+        </h1>
+      </div>
+
+  <!-- EMPTY DIV -->
+      <div class="w-0 md:w-2/5 ml-auto my-auto space-y-1 m-auto"></div>
+
+      <div class="w-full md:w-2/5 mr-auto my-auto space-y-1 m-auto">
+        <label>
+          Street Adress:
+          <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md duration-200 hover:drop-shadow-lg" placeholder="Street Address" required>
+        </label>
+      </div>
+
+  <!-- ADDRESS LINE 2 -->
+      <div class="w-full md:w-2/5 ml-auto my-auto space-y-1 m-auto">
+        <label>
+          Address Line 2:
+          <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md duration-200 hover:drop-shadow-lg" placeholder="Address Line 2" required>
+        </label>
+      </div>
+
+  <!-- CITY -->
+      <div class="w-full md:w-2/5 mr-auto my-auto space-y-1 m-auto">
+        <label>
+          City:
+          <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md duration-200 hover:drop-shadow-lg" placeholder="City" required>
+        </label>
+      </div>
+
+  <!-- PROVINCE -->
+      <div class="w-full md:w-2/5 ml-auto my-auto space-y-1 m-auto">
+        <label>
+          Province:
+          <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md duration-200 hover:drop-shadow-lg" placeholder="Province" required>
+        </label>
+      </div>
+
+  <!-- POSTAL CODE -->
+      <div class="w-full md:w-2/5 mr-auto my-auto space-y-1 m-auto">
+        <label>
+          Postal Code:
+          <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md duration-200 hover:drop-shadow-lg" placeholder="Postal Code" required>
+        </label>
+      </div>
+
+  <!-- COUNTRY -->
+      <div class="w-full md:w-2/5 ml-auto my-auto space-y-1 m-auto">
+        <label>
+          Country:
+          <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md duration-200 hover:drop-shadow-lg" placeholder="Country" required>
+        </label>
+      </div>
+
+
+  <!-- EXPERIENCE -->
+  <!-- TOTAL EXPERIENCE -->
+      <div class="w-full md:w-2/5 mr-auto my-auto space-y-1 m-auto pt-8">
+        <h1 class="w-full text-left text-2xl ">
+          Experience:
+        </h1>
+      </div>
+
+  <!-- EMPTY DIV -->
+      <div class="w-0 md:w-2/5 ml-auto my-auto space-y-1 m-auto"></div>
+
+      <div class="w-full md:w-2/5 mr-auto my-auto space-y-1 m-auto">
+        <label>
+          Total Years Experience:
+          <input type="number" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md duration-200 hover:drop-shadow-lg" placeholder="Postal Code" required>
+        </label>
+      </div>
+
+  <!-- HENDON MOB PROFILE -->
+      <div class="w-full md:w-2/5 ml-auto my-auto space-y-1 m-auto">
+        <label>
+          Hendon Mob Profile:
+          <input type="url" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md duration-200 hover:drop-shadow-lg" placeholder="Hendon Mob Profile Link" required>
+        </label>
+      </div>
+
+      <div class="w-full md:w-2/5 mr-auto my-auto space-y-1 m-auto">
+        <label>
+          Achievements:
+          <textarea class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md duration-200 hover:drop-shadow-lg" placeholder="List Your Achievements Here"></textarea>
+        </label>
+      </div>
+
+  <!-- EMPTY DIV -->
+      <div class="w-0 md:w-2/5 ml-auto my-auto space-y-1 m-auto"></div>
+
+
+  <!-- PASSWORD -->
+      <div class="w-full md:w-2/5 mr-auto my-auto space-y-1 m-auto pt-8">
+        <h1 class="w-full text-left text-2xl ">
+          Password Verification
+        </h1>
+      </div>
+
+  <!-- EMPTY DIV -->
+      <div class="w-0 md:w-2/5 ml-auto my-auto space-y-1 m-auto"></div>
+
+  <!-- CREATE PASSWORD -->
+      <div class="w-full md:w-2/5 mr-auto my-auto space-y-1 m-auto">
+        <label>
+          Create Password:
+          <input type="password" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md duration-200 hover:drop-shadow-lg" placeholder="Create Your Password" required>
+        </label>
+      </div>
+
+  <!-- CONFIRM PASSWORD -->
+      <div class="w-full md:w-2/5 ml-auto my-auto space-y-1 m-auto">
+        <label class="">
+          Confirm Password:
+          <input type="password" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md duration-200 hover:drop-shadow-lg" placeholder="Confirm Your Password" required>
+        </label>
+      </div>
+
+      <!-- Empty DIV -->
+      <div class="w-full md:w-2/5 mr-auto my-auto space-y-1 m-auto"></div>
+
+      <div class="w-full md:w-2/5 text-right m-auto">
+        <button type="submit" class="ml-auto bg-red-600 px-4 py-2 rounded-md ease-in-out duration-500 hover:scale-110 hover:brightness-110">Register</button>
+      </div>
+    </div>
+  </form>
 </body>
 
 </html>
